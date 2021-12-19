@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./assets/css/styles.css" rel="stylesheet">
+    <script src="./assets/js/script.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.24.0/axios.min.js" integrity="sha512-u9akINsQsAkG9xjc1cnGF4zw5TFDwkxuc9vUp5dltDWYCSmyd0meygbvgXrlc/z7/o4a19Fb5V0OUE58J7dcyw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
+
+    <title>Film / Movie information</title>
+</head>
+<body>
+    <form id="formInput" class="formInput">
+      <div class="width100">
+        <label for="exampleInputEmail1" class="form-label">Film's name:</label>
+        <input type="text" class="form-control width100" id="inputFilmName" aria-describedby="filmName" placeholder="Insert the movie / film's name and press Enter">
+      </div>
+    </form>
+
+    <p id="requestHandeler"></p>
+
+    <div id="card" class="card mb-3 hidden centered" style="width:800px; height: 400px; margin:0 auto;">
+      <div class="row g-0">
+        <div class="col-md-4">
+          <img src="" id="filmImage" class="img-fluid rounded-start" alt="Image not found!">
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title centered-text" id="filmName"></h5>
+            <p id="plot" class="card-text"></p>
+            <div id="rating">
+              <table>
+                <tr>
+                  <th>Genre</th>
+                  <th>Director</th>
+                  <th>Writter</th>
+                </tr>
+                <tr>
+                  <td id="genre"></td>
+                  <td id="director"></td>
+                  <td id="writter"></td>
+                </tr>
+              </table>
+            </div>
+              <div class="ratings">
+                <br>
+                <p id="">Rating: 
+                <span class="rating_star fa fa-star"></span>
+                <span class="rating_star fa fa-star"></span>
+                <span class="rating_star fa fa-star"></span>
+                <span class="rating_star fa fa-star"></span>
+                <span class="rating_star fa fa-star"></span>
+              </p>
+              </div>
+              <button class='WatchON btn btn-danger'>
+                Watch it on: <span class="iconify" data-icon="mdi:netflix" data-width="30" data-height="30"></span>
+              </button>
+            <p class="card-text"><small class="text-muted">Information from <a href="http://www.omdbapi.com/">OMDB</a></small></p>
+          </div>
+        </div>
+      </div>
+    </div>
+</body>
+</html>

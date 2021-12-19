@@ -1,0 +1,64 @@
+
+body {
+    background: rgb(174,225,238);
+    background: radial-gradient(circle, rgba(174,225,238,1) 0%, rgba(151,233,148,0.6870098381149334) 100%);
+}
+
+.width100{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 100%
+}
+
+.formInput {
+    align-items: center;
+}
+
+.alert1{ 
+    text-align: center;
+} 
+
+form{
+    text-align: center;
+}
+
+.hidden{
+    visibility: hidden;
+}
+
+.centered-text{
+    text-align: center;
+}
+
+.checked {
+  color: orange;
+  transform: scale(-1, 1);
+}
+
+table{
+    width: 100%;
+    background-color: #FFFFFF;
+    border-collapse: collapse;
+    border-width: 1px;
+    border-color: #f7f7f700;
+    border-style: solid;
+    color: #000000;
+}
+
+th, td {
+    border-width: 1px;
+    border-color: #080808;
+    border-style: solid;
+    padding: 5px;
+}
+
+.ratings {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.WatchOn {
+    display: inline
+}
